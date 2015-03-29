@@ -18,7 +18,7 @@ public:
 		vector *my_vector;
 		my_vector = (vector *)vec;
 		delete (int *) my_vector->array;
-		::delete vec;
+		::delete my_vector;
 	}
 	void read()
 	{
@@ -30,6 +30,7 @@ public:
 		int sum = 0;
 		for(int i=0;i<arr_size;i++)
 			sum+=array[i];
+		return sum;
 	}
 };
 
@@ -38,7 +39,7 @@ int main()
 	vector *my_vector = new vector;
 	cout<<"enter data .."<<endl;
 	my_vector->read();
-	cout<<"sum : "<<my_vector->sum();
+	cout<<"sum : "<<my_vector->sum()<<endl;
 	delete my_vector;
 	return 0;
 }
