@@ -16,7 +16,7 @@ public:
 	void print()
 	{
 		cout<<"Salary is: "<<salary<<endl;
-		cout<<"no. of modules are: "<<modules;
+		cout<<"no. of modules are: "<<modules<<endl;
 	}
 	company operator +(company c)
 	{

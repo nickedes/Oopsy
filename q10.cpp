@@ -10,7 +10,7 @@ class friendfunc1
 public:
 	void get_data()
 	{
-	cout<<"\nEnter 2 numbers:\n";
+	cout<<"\nEnter 2 numbers: ";
 	cin>>a>>b;
 	}
 };
@@ -22,7 +22,7 @@ class friendfunc2
 public:
 	void get_data()
 	{
-		cout<<"\nEnter 3 numbers:\n";
+		cout<<"\nEnter 3 numbers: ";
 		cin>>c>>d>>e;
 	}
 };
@@ -37,6 +37,6 @@ int main()
 	friendfunc2 obj2;
 	obj1.get_data();
 	obj2.get_data();
-	cout <<"Average : "<<cal_avg(obj1,obj2);
+	cout <<"Average : "<<cal_avg(obj1,obj2)<<endl;
 	return 0;
 }

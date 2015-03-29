@@ -10,7 +10,7 @@ void reverse(int num)
 		reversed *= 10;
 		reversed += i%10;
 	}
-	cout << "Function without return type:" <<endl<<"reversed no. is "<<reversed;
+	cout << "Function without return type: "<<endl<<"reversed no. is "<<reversed;
 }
 
 int with_reverse(int num)
@@ -21,7 +21,7 @@ int with_reverse(int num)
 		reversed *= 10;
 		reversed += i%10;
 	}
-	cout <<endl<< "Function with return type:" <<endl<<"reversed no. is ";
+	cout <<endl<< "Function with return type: "<<endl<<"reversed no. is ";
 	return reversed;
 }
 
@@ -31,6 +31,6 @@ int main()
 	cout<<"Enter number:";
 	cin>>num;
 	reverse(num);
-	cout<<with_reverse(num);
+	cout<<with_reverse(num)<<endl;
 	return 0;
 }

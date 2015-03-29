@@ -8,24 +8,24 @@ int main()
 	cout<<"Enter string:";
 	cin >> input;
 	str = input;
-	
-	cout<<*str;
 	int no_vowels = 0;
 	for (int i=0;i<strlen(input);i++,str++)
 	{
 		switch(*str)
 		{
 			case 'a':
-			case 'b':
+			case 'A':
+			case 'E':
 			case 'e':
+			case 'I':
 			case 'i':
+			case 'O':
 			case 'o':
+			case 'U':
 			case 'u':no_vowels++;
 			break;
 		}
 	}
-	
-
-	cout<<endl<<no_vowels;
+	cout<<"The no. of vowels are: "<<no_vowels<<endl;
 	return 0;	
 }
