@@ -23,7 +23,7 @@ public:
 class friendclass
 {
 public:
-	void mark_avg(student &stud)
+	void mark_avg(student stud)
 	{
 		int avg=(stud.mark1+stud.mark2+stud.mark3)/3;
 		stud.display(avg);

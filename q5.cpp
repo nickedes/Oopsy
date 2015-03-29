@@ -10,7 +10,7 @@ public:
 	{
 		cout<<"Enter roll no. :";
 		cin>>roll_no;
-		cout<<endl<<"enter name";
+		cout<<endl<<"enter name ";
 		cin>>name;
 	}
 
@@ -24,10 +24,12 @@ public:
 
 int main()
 {
-	pntr_obj obj1,obj2;
+	pntr_obj obj1,obj2,obj3;
 	obj1.set_data();
+	obj3.set_data();
 	obj2.set_data();
 	obj1.print();
-	obj2.print();
+	obj2.print();	
+	obj3.print(); 
 	return 0;
 }
