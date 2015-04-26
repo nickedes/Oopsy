@@ -29,3 +29,5 @@
     Blog
     About
 
+*.txt
+*.dat
