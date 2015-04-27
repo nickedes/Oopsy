@@ -3,11 +3,11 @@ using namespace std;
 
 template <class t>
 
-class lol 
+class paired 
 {
 	t x,y;
 public:
-	lol()
+	paired()
 	{
 		cin >> x >> y;
 	}
@@ -19,10 +19,10 @@ public:
 int main()
 {
 	cout << "Enter 2 no.s ";
-	lol<int>p1;
+	paired<int>p1;
 	cout << "maximum is:"<<p1.get_max();
 	cout << endl << "Enter 2 no.s ";
-	lol<float>p2;
+	paired<float>p2;
 	cout << "maximum is:"<<p2.get_max();
 	return 0;
 }

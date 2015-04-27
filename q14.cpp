@@ -42,8 +42,10 @@ public:
 
 int main()
 {
-	student s;
+	student s,s1;
 	cin >> s;
 	cout << s;
+	cin >> s1;
+	cout << s1;
 	return 0;
 }
