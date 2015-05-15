@@ -2,17 +2,16 @@
 
 using namespace std;
 
-template <class t>
-
-void swap(t & a, t & b)
+template <typename t>
+void swaped(t & a, t & b)
 {
-	t x = a;
+	t x;
+	x = a;
 	a = b;
 	b = x;
 }
 
-template <class t>
-
+template <typename t>
 void sort( t & arr, int N)
 {
 	for (int i = 0 ; i < N ; i++)
@@ -20,13 +19,8 @@ void sort( t & arr, int N)
 		for (int j = 0 ; j < N ;j++)
 		{
 			if (arr[j] > arr[j+1])
-				swap(arr[j],arr[j+1]);
+				swaped(arr[j],arr[j+1]);
 		}
-	}
-
-	for(int i=0 ; i < N ; i ++ )
-	{
-		cout << arr[i];
 	}
 }
 
