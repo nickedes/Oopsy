@@ -2,7 +2,7 @@
 
 using namespace std;
 
-template <typename t>
+template <class t>
 void swaped(t & a, t & b)
 {
 	t x;
@@ -11,12 +11,12 @@ void swaped(t & a, t & b)
 	b = x;
 }
 
-template <typename t>
+template <class t>
 void sort( t & arr, int N)
 {
 	for (int i = 0 ; i < N ; i++)
 	{
-		for (int j = 0 ; j < N ;j++)
+		for (int j = 0 ; j < i ;j++)
 		{
 			if (arr[j] > arr[j+1])
 				swaped(arr[j],arr[j+1]);
